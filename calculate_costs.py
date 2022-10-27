@@ -2,6 +2,7 @@ from pandas import read_csv
 from algorithms_training import training_models
 import argparse
 
+
 lags = {
     'cpu': {
         'arima': [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
@@ -153,8 +154,8 @@ args = CLI.parse_args()
 
 if not args.microservices or not args.metrics or not args.learning_algorithms:
     print('You need to specify the microservice, metric and learning algorithm')
-    print('For example: python3 costs.py --metric cpu --microservices 1 --learning_algorithm arima')
-    print('For example: python3 costs.py --metric cpu memory --microservices 1 2 3 --learning_algorithm mlp svr')
+    print('For example: python3 calculate_costs.py --metric cpu --microservices 1 --learning_algorithm arima')
+    print('For example: python3 calculate_costs.py --metric cpu memory --microservices 1 2 --learning_algorithm svr')
     exit()
 
 for microservice in args.microservices:

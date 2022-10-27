@@ -13,7 +13,6 @@ CLI.add_argument("--microservices", nargs="*", type=int, default=[1, 2, 3, 4, 5,
 CLI.add_argument("--metrics", nargs="*", type=str, default=['cpu', 'memory', 'response_time', 'traffic'])
 CLI.add_argument("--learning_algorithms", nargs="*", type=str,
                  default=['arima', 'da-rnn', 'deep-ar', 'deep-state', 'lstm', 'mlp', 'rf', 'svr', 'tft', 'xgboost'])
-CLI.add_argument("--sliding_window_sizes", nargs="*", type=int, default=[10, 20, 30, 40, 50, 60])
 args = CLI.parse_args()
 
 if not args.microservices or not args.metrics or not args.learning_algorithms:
@@ -25,9 +24,9 @@ if not args.microservices or not args.metrics or not args.learning_algorithms:
 for microservice in args.microservices:
     for metric in args.metrics:
         time_series_name = 'microservice ' + str(microservice)
-        training_level = 'hyper_parameter'
-        ea = EvaluateAccuracy('mse', args.sliding_window_sizes, args.learning_algorithms, metric, time_series_name,
-                              training_level)
+        training_level = 'costs'
 
-        ea.generate_performance_accuracy()
+        ea = EvaluateAccuracy('mse', None, args.learning_algorithms, metric, time_series_name,
+                              training_level)
+        ea.generate_costs_accuracy()
 

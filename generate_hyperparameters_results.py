@@ -1,6 +1,12 @@
-from pandas import read_csv
-from algorithms_training import training_models
+from evaluate_accuracy import EvaluateAccuracy
 import argparse
+from gluonts.env import env
+import os
+import warnings
+
+warnings.filterwarnings('ignore')
+env._push(use_tqdm=False)
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 CLI = argparse.ArgumentParser()
 CLI.add_argument("--microservices", nargs="*", type=int, default=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -18,14 +24,10 @@ if not args.microservices or not args.metrics or not args.learning_algorithms:
 
 for microservice in args.microservices:
     for metric in args.metrics:
-        for learning_algorithm in args.learning_algorithms:
-            time_series_name = 'microservice ' + str(microservice)
-            time_series = read_csv('time_series/alibaba/' + time_series_name + '/' + metric + '.csv')['value'].values
-            training_level = 'hyper_parameter'
-            training_percentage = 0.6
+        time_series_name = 'microservice ' + str(microservice)
+        training_level = 'hyper_parameter'
+        ea = EvaluateAccuracy('mse', args.sliding_window_sizes, args.learning_algorithms, metric, time_series_name,
+                              training_level)
 
-            ea = EvaluateAccuracy('mse', args.sliding_window_sizes, learning_algorithms, metric, time_series_name,
-                                  training_level)
-
-            ea.evaluate_accuracy_monolithic(time_to_fit)
+        ea.generate_performance_accuracy()
 

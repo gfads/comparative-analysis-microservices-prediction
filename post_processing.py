@@ -1,8 +1,9 @@
-from pre_processing import Preprocessor
+from preprocessor import Preprocessor
 
 
 class PickleStructure:
-    def __init__(self, horizontal_step, metric_name, model, model_name, preprocessor, training_level, series_name):
+    def __init__(self, horizontal_step, metric_name, model, model_name, preprocessor, training_level, series_name,
+                 time_to_fit):
         self.folder = series_name + '/' + metric_name + '/' + training_level + '/'
         self.horizontal_step = horizontal_step
         self.model = model
@@ -13,6 +14,7 @@ class PickleStructure:
         self.training_level = training_level
         self.series_name = series_name
         self.metric_name = metric_name
+        self.time_to_fit = time_to_fit / 30
 
         if self.model_name in ['deep-ar', 'deep-state', 'tft']:
             from gluonts.dataset.pandas import PandasDataset
@@ -30,6 +32,17 @@ class PickleStructure:
                 data.append(PandasDataset([true_values[0:i + int(self.preprocessor.sliding_window_size)]]))
 
             self.preprocessor.testing_set = data
+
+        if self.time_to_fit is not None:
+            import time
+            self.model_key = self.model_name
+            self.model_path = self.folder + self.model_key
+
+            start_time = time.time()
+            for i in range(0, 30):
+                predict_data(self.preprocessor, model, self.model_name, self.preprocessor.lags)
+
+            self.time_to_predict = (time.time() - start_time) / 30
 
         save_pickle(self.__dict__)
 
@@ -50,8 +63,9 @@ def load_pickle(file_path: str):
 
 
 def save_model(metric_name: str, model: object, model_name: str, preprocessor: Preprocessor, training_level: str,
-               series_name: str, horizontal_step: int = 1):
-    PickleStructure(horizontal_step, metric_name, model, model_name, preprocessor, training_level, series_name)
+               series_name: str, horizontal_step: int = 1, time_to_fit=None):
+    PickleStructure(horizontal_step, metric_name, model, model_name, preprocessor, training_level, series_name,
+                    time_to_fit)
 
 
 def measure_models_accuracy(actual: list, predicted: list, accuracy_measure: str = 'mse', **kwargs):
@@ -65,15 +79,21 @@ def measure_models_accuracy(actual: list, predicted: list, accuracy_measure: str
 
 def predict_data(data, model, ml_model: str, lags, **kwargs):
     if ml_model[0: 3] == 'svr' or ml_model[0: 3] == 'mlp' or ml_model[0:2] == 'rf':
+        data = data.testing_set
         return model.predict(data[:, lags])
     elif ml_model[0: 7] == 'xgboost':
+        data = data.testing_set
+
         return model.predict(data[:, lags])
     elif ml_model[0: 4] == 'lstm':
+        data = data.testing_set
         data = data[:, lags]
         data = data.reshape((data.shape[0], data.shape[1], 1))
         return model.predict(data).ravel()
     elif ml_model[0: 3] in ['dee', 'tft']:
+        data = data.testing_x
         pred = []
+
         for d in data:
             predictions = model.predict(d)
 
@@ -83,6 +103,7 @@ def predict_data(data, model, ml_model: str, lags, **kwargs):
         return pred
 
     elif ml_model[0: 6] == 'da-rnn':
+        data = data.testing_x
         import torch
 
         with torch.no_grad():
@@ -91,6 +112,7 @@ def predict_data(data, model, ml_model: str, lags, **kwargs):
         return list(a.cpu().repeat(1, 2).numpy()[:, -1])
 
     elif ml_model[0: 5] == 'arima':
+        data = data.testing_set
         arima_forecast = kwargs.get('arima_forecast')
         if arima_forecast:
             if arima_forecast == 'in_sample':

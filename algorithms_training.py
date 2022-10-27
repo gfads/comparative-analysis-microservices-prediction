@@ -2,17 +2,25 @@ from itertools import product
 
 
 def training_models(learning_algorithms, sliding_window_sizes, time_series, training_level, training_percentage,
-                    serie_key, metric_name, validation_percentage=None):
+                    serie_key, metric_name, learning_parameters=None, validation_percentage=None,
+                    max_sliding_window_size=60):
     from post_processing import save_model
-    from pre_processing import Preprocessor
+    from preprocessor import Preprocessor
+    import time
 
     for mn in learning_algorithms:
         for ws in sliding_window_sizes:
-            pp = Preprocessor(mn, time_series, ws, training_percentage, validation_percentage=validation_percentage,
-                              max_sliding_window_size=60)
+            start_time = time.time()
 
-            model = select_model(mn, training_level, pp)
-            save_model(metric_name, model, mn, pp, training_level, serie_key)
+            pp = Preprocessor(mn, time_series, ws, training_percentage, validation_percentage=validation_percentage,
+                              max_sliding_window_size=max_sliding_window_size)
+            model = select_model(mn, training_level, pp, learning_parameters=learning_parameters)
+
+            if learning_parameters is not None:
+                time_to_fit = time.time() - start_time
+                save_model(metric_name, model, mn, pp, training_level, serie_key, time_to_fit=time_to_fit)
+            else:
+                save_model(metric_name, model, mn, pp, training_level, serie_key)
 
 
 def d_values(data: list):
@@ -66,10 +74,10 @@ class DARNN:
     enconder = [16, 32, 64, 128, 256]
     sliding_window_size: int = None
 
-    def __init__(self, training_level, sliding_window_size, df):
+    def __init__(self, training_level, sliding_window_size, lp):
         self.training_level = training_level
         self.sliding_window_size = sliding_window_size
-        self.df = df
+        self.lp = lp
 
         if self.training_level == 'hyper_parameter':
             self.hyperparameter_training()
@@ -79,7 +87,7 @@ class DARNN:
     def costs_training(self):
         from da_rnn.torch import DARNN
 
-        self.models = DARNN(n=1, T=len(self.sliding_window_size), m=self.df[0], p=self.df[0], y_dim=1, dropout=0)
+        self.models = DARNN(n=1, T=len(self.sliding_window_size), m=self.lp[0], p=self.lp[0], y_dim=1, dropout=0)
 
     def hyperparameter_training(self):
         from da_rnn.torch import DARNN
@@ -196,9 +204,9 @@ class MLP:
 
     hyper_param = list(product(hidden_layer_sizes, activation, solver, range(0, num_exec)))
 
-    def __init__(self, training_level, df):
+    def __init__(self, training_level, lp):
         self.training_level = training_level
-        self.df = df
+        self.lp = lp
 
         if self.training_level == 'hyper_parameter':
             self.hyperparameter_training()
@@ -208,7 +216,7 @@ class MLP:
 
     def costs_training(self):
         from sklearn.neural_network import MLPRegressor
-        self.models = MLPRegressor(activation=self.df[0], hidden_layer_sizes=self.df[1], max_iter=1000)
+        self.models = MLPRegressor(activation=self.lp[0], hidden_layer_sizes=self.lp[1], max_iter=1000)
 
     def hyperparameter_training(self):
         from sklearn.neural_network import MLPRegressor
@@ -228,9 +236,9 @@ class RF:
     n_estimators = [100, 500, 1000]
     hyper_param = list(product(min_samples_leaf, min_samples_split, n_estimators))
 
-    def __init__(self, training_level, df):
+    def __init__(self, training_level, lp):
         self.training_level = training_level
-        self.df = df
+        self.lp = lp
 
         if self.training_level == 'hyper_parameter':
             self.hyperparameter_training()
@@ -248,8 +256,8 @@ class RF:
 
     def costs_training(self):
         from sklearn.ensemble import RandomForestRegressor
-        self.models = RandomForestRegressor(min_samples_leaf=self.df[0], min_samples_split=self.df[1],
-                                            n_estimators=self.df[2], n_jobs=-1)
+        self.models = RandomForestRegressor(min_samples_leaf=self.lp[0], min_samples_split=self.lp[1],
+                                            n_estimators=self.lp[2], n_jobs=-1)
 
 
 class SVR:
@@ -264,9 +272,9 @@ class SVR:
 
     hyper_param = list(product(kernel, gamma, epsilon, C))
 
-    def __init__(self, training_level, df):
+    def __init__(self, training_level, lp):
         self.training_level = training_level
-        self.df = df
+        self.lp = lp
 
         if self.training_level == 'hyper_parameter':
             self.hyperparameter_training()
@@ -285,7 +293,7 @@ class SVR:
 
     def costs_training(self):
         from sklearn.svm import SVR
-        self.models = SVR(C=self.df[0], epsilon=self.df[1], gamma=self.df[2], kernel=self.df[3])
+        self.models = SVR(C=self.lp[0], epsilon=self.lp[1], gamma=self.lp[2], kernel=self.lp[3])
 
 
 class TFT:
@@ -354,9 +362,9 @@ class XGBoost:
     hyper_param = list(
         product(col_sample_by_tree, gamma, learning_rate, max_depth, n_estimators, reg_alpha, reg_lambda, subsample))
 
-    def __init__(self, training_level, df):
+    def __init__(self, training_level, lp):
         self.training_level = training_level
-        self.df = df
+        self.lp = lp
 
         if self.training_level == 'hyper_parameter':
             self.hyperparameter_training()
@@ -377,19 +385,19 @@ class XGBoost:
 
     def costs_training(self):
         from xgboost import XGBRegressor
-        self.models = XGBRegressor(colsample_bytree=self.df[0], gamma=self.df[1], learning_rate=self.df[2],
-                                   max_depth=self.df[3], n_estimators=self.df[4], reg_alpha=self.df[5],
-                                   reg_lambda=self.df[6])
+        self.models = XGBRegressor(colsample_bytree=self.lp[0], gamma=self.lp[1], learning_rate=self.lp[2],
+                                   max_depth=self.lp[3], n_estimators=self.lp[4], reg_alpha=self.lp[5],
+                                   reg_lambda=self.lp[6])
 
 
-def select_model(model_name, training_level, preprocessor, df=None):
+def select_model(model_name, training_level, preprocessor, learning_parameters=None):
     mt = ModelTraining()
     model = None
 
     if model_name == 'arima':
         model = ARIMA(training_level)
     elif model_name == 'da-rnn':
-        model = DARNN(training_level, preprocessor.lags, df)
+        model = DARNN(training_level, preprocessor.lags, learning_parameters)
     elif model_name == 'deep-ar':
         model = DeepAR(training_level)
     elif model_name == 'deep-state':
@@ -397,17 +405,17 @@ def select_model(model_name, training_level, preprocessor, df=None):
     elif model_name == 'lstm':
         model = LSTM(training_level)
     elif model_name == 'mlp':
-        model = MLP(training_level, df)
+        model = MLP(training_level, learning_parameters)
     elif model_name == 'rf':
-        model = RF(training_level, df)
+        model = RF(training_level, learning_parameters)
     elif model_name == 'svr':
-        model = SVR(training_level, df)
+        model = SVR(training_level, learning_parameters)
     elif model_name == 'tft':
         model = TFT(training_level)
     elif model_name == 'xgboost':
-        model = XGBoost(training_level, df)
+        model = XGBoost(training_level, learning_parameters)
 
-    mt.train_models(preprocessor, model, df)
+    mt.train_models(preprocessor, model, learning_parameters)
 
     return mt.trained_model
 
@@ -418,10 +426,10 @@ def train_arima(model, normalised_time_series, training_set, validation_set, win
     return model.auto_arima(data)
 
 
-def train_arima_costs(model, normalised_time_series, training_set, validation_set, window_size, df):
+def train_arima_costs(model, normalised_time_series, training_set, validation_set, window_size, lp):
     data = normalised_time_series[:(len(training_set) + len(validation_set) + window_size)]
 
-    return model.auto_arima(data, start_p=df[0], max_p=df[0], start_q=df[2], max_q=df[2])
+    return model.auto_arima(data, start_p=lp[0], max_p=lp[0], start_q=lp[2], max_q=lp[2])
 
 
 def train_da_rnn(model, training_x, training_y):
@@ -546,7 +554,7 @@ class ModelTraining:
     def __init__(self):
         self.trained_models = None
 
-    def train_models(self, pp, model, df):
+    def train_models(self, pp, model, lp):
         models = model.models
         model_type = model.model_type
         training_level = model.training_level
@@ -576,14 +584,14 @@ class ModelTraining:
             elif training_level == 'costs':
                 for _ in range(0, 30):
                     self.trained_model = train_arima_costs(models, normalised_time_series, training_set,
-                                                           validation_set, sliding_window_size, df)
+                                                           validation_set, sliding_window_size, lp)
 
         elif model_type == 'lstm':
             if training_level == 'costs':
                 from keras.models import Sequential
                 for _ in range(0, 30):
-                    self.trained_model = train_lstm(lags, Sequential(), training_set, hidden_layers=df[0],
-                                                    number_of_units=df[1], learning_rate=df[2])
+                    self.trained_model = train_lstm(lags, Sequential(), training_set, hidden_layers=lp[0],
+                                                    number_of_units=lp[1], learning_rate=lp[2])
 
             elif training_level == 'hyper_parameter':
                 trained_models = train_hyper_parameters_lstm(lags, models, training_set)

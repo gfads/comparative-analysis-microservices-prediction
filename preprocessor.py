@@ -1,6 +1,7 @@
 from numpy import ndarray
 from sklearn.preprocessing import MinMaxScaler
 
+
 class Preprocessor:
     model_name: str = None
     time_series = ndarray
