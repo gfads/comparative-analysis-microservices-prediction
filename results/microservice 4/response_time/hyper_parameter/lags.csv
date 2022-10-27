@@ -1,2 +1,2 @@
-svr
-40
+arima,da-rnn,deep-ar,deep-state,lstm,mlp,rf,svr,tft,xgboost
+10,50,60,50,30,30,30,40,40,40
