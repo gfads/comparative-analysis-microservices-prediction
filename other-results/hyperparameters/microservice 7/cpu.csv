@@ -1,0 +1,1874 @@
+,10,20,30,40,50,60
+arima," ARIMA(5,0,2)(0,0,0)[0]          "," ARIMA(5,0,2)(0,0,0)[0]          "," ARIMA(5,0,2)(0,0,0)[0]          "," ARIMA(5,0,2)(0,0,0)[0]          "," ARIMA(5,0,2)(0,0,0)[0]          "," ARIMA(5,0,2)(0,0,0)[0]          "
+da-rnn,"{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=74, out_features=10, bias=False)
+  (v_e): Linear(in_features=10, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=96, out_features=32, bias=False)
+  (v_d): Linear(in_features=32, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=33, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+  (Wb): Linear(in_features=64, out_features=32, bias=True)
+  (vb): Linear(in_features=32, out_features=1, bias=True)
+))]), 'y_dim': 1}","{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=84, out_features=20, bias=False)
+  (v_e): Linear(in_features=20, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=96, out_features=32, bias=False)
+  (v_d): Linear(in_features=32, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=33, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+  (Wb): Linear(in_features=64, out_features=32, bias=True)
+  (vb): Linear(in_features=32, out_features=1, bias=True)
+))]), 'y_dim': 1}","{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=85, out_features=21, bias=False)
+  (v_e): Linear(in_features=21, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=96, out_features=32, bias=False)
+  (v_d): Linear(in_features=32, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=33, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+  (Wb): Linear(in_features=64, out_features=32, bias=True)
+  (vb): Linear(in_features=32, out_features=1, bias=True)
+))]), 'y_dim': 1}","{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=92, out_features=28, bias=False)
+  (v_e): Linear(in_features=28, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=96, out_features=32, bias=False)
+  (v_d): Linear(in_features=32, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=33, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+  (Wb): Linear(in_features=64, out_features=32, bias=True)
+  (vb): Linear(in_features=32, out_features=1, bias=True)
+))]), 'y_dim': 1}","{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=99, out_features=35, bias=False)
+  (v_e): Linear(in_features=35, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=96, out_features=32, bias=False)
+  (v_d): Linear(in_features=32, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=33, out_features=1, bias=False)
+  (lstm): LSTM(1, 32)
+  (Wb): Linear(in_features=64, out_features=32, bias=True)
+  (vb): Linear(in_features=32, out_features=1, bias=True)
+))]), 'y_dim': 1}","{'training': True, '_parameters': OrderedDict(), '_buffers': OrderedDict(), '_non_persistent_buffers_set': set(), '_backward_hooks': OrderedDict(), '_is_full_backward_hook': None, '_forward_hooks': OrderedDict(), '_forward_pre_hooks': OrderedDict(), '_state_dict_hooks': OrderedDict(), '_load_state_dict_pre_hooks': OrderedDict(), '_load_state_dict_post_hooks': OrderedDict(), '_modules': OrderedDict([('encoder', Encoder(
+  (WU_e): Linear(in_features=74, out_features=42, bias=False)
+  (v_e): Linear(in_features=42, out_features=1, bias=False)
+  (lstm): LSTM(1, 16)
+)), ('decoder', Decoder(
+  (WU_d): Linear(in_features=48, out_features=16, bias=False)
+  (v_d): Linear(in_features=16, out_features=1, bias=False)
+  (wb_tilde): Linear(in_features=17, out_features=1, bias=False)
+  (lstm): LSTM(1, 16)
+  (Wb): Linear(in_features=32, out_features=16, bias=True)
+  (vb): Linear(in_features=16, out_features=1, bias=True)
+))]), 'y_dim': 1}"
+deep-ar,"{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacee8ea90>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdace4d7e80>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacd9057f0>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdad46c08b0>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdb9443db80>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'feat_static_real', 'past_time_feat', 'past_target', 'past_observed_values', 'future_time_feat', 'past_is_pad'], 'prediction_net': DeepARPredictionNetwork(
+  (proj_distr_args): ArgProj(
+    (domain_map): HybridLambda(domain_map)
+  )
+  (rnn): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(21 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  (2): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 64, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacec4e310>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}"
+deep-state,"{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacee88160>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdb8f9cd040>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacfb1f880>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacd7121f0>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacef9e670>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['feat_static_cat', 'past_observed_values', 'past_seasonal_indicators', 'past_time_feat', 'past_target', 'future_seasonal_indicators', 'future_time_feat'], 'prediction_net': DeepStatePredictionNetwork(
+  (prior_mean_model): Dense(40 -> 13, linear)
+  (prior_cov_diag_model): Dense(40 -> 13, Activation(sigmoid))
+  (lstm): HybridSequentialRNNCell(
+  (0): ZoneoutCell(p_out=0.0, p_state=0.1, LSTMCell(3 -> 160))
+  (1): ZoneoutCell(p_out=0.0, p_state=0.1, ResidualCell(LSTMCell(40 -> 160)))
+  )
+  (lds_proj): LDSArgsProj(
+    (dense_noise_std): Dense(40 -> 1, Activation(sigmoid))
+    (dense_innovation): Dense(40 -> 1, Activation(sigmoid))
+    (dense_residual): Dense(40 -> 1, linear)
+  )
+  (embedder): FeatureEmbedder(
+  
+  )
+  (scaler): MeanScaler(
+  
+  )
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdad466df40>, 'forecast_generator': gluonts.model.forecast_generator.SampleForecastGenerator(), 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}"
+lstm,"Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+","Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_21""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_105 (LSTM)             (None, 20, 50)            10400     
+                                                                 
+ lstm_106 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_107 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_108 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_21 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 71,051
+Trainable params: 71,051
+Non-trainable params: 0
+_________________________________________________________________
+","Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_21""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_105 (LSTM)             (None, 20, 50)            10400     
+                                                                 
+ lstm_106 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_107 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_108 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_21 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 71,051
+Trainable params: 71,051
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_48""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_242 (LSTM)             (None, 21, 125)           63500     
+                                                                 
+ lstm_243 (LSTM)             (None, 21, 125)           125500    
+                                                                 
+ lstm_244 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_48 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+","Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_21""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_105 (LSTM)             (None, 20, 50)            10400     
+                                                                 
+ lstm_106 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_107 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_108 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_21 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 71,051
+Trainable params: 71,051
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_48""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_242 (LSTM)             (None, 21, 125)           63500     
+                                                                 
+ lstm_243 (LSTM)             (None, 21, 125)           125500    
+                                                                 
+ lstm_244 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_48 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_25""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_121 (LSTM)             (None, 28, 125)           63500     
+                                                                 
+ lstm_122 (LSTM)             (None, 28, 125)           125500    
+                                                                 
+ lstm_123 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_25 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+","Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_21""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_105 (LSTM)             (None, 20, 50)            10400     
+                                                                 
+ lstm_106 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_107 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_108 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_21 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 71,051
+Trainable params: 71,051
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_48""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_242 (LSTM)             (None, 21, 125)           63500     
+                                                                 
+ lstm_243 (LSTM)             (None, 21, 125)           125500    
+                                                                 
+ lstm_244 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_48 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_25""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_121 (LSTM)             (None, 28, 125)           63500     
+                                                                 
+ lstm_122 (LSTM)             (None, 28, 125)           125500    
+                                                                 
+ lstm_123 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_25 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_59""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_302 (LSTM)             (None, 35, 125)           63500     
+                                                                 
+ lstm_303 (LSTM)             (None, 35, 125)           125500    
+                                                                 
+ lstm_304 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_59 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+","Model: ""sequential_58""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_304 (LSTM)             (None, 10, 50)            10400     
+                                                                 
+ lstm_305 (LSTM)             (None, 10, 50)            20200     
+                                                                 
+ lstm_306 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_58 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_21""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_105 (LSTM)             (None, 20, 50)            10400     
+                                                                 
+ lstm_106 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_107 (LSTM)             (None, 20, 50)            20200     
+                                                                 
+ lstm_108 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_21 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 71,051
+Trainable params: 71,051
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_48""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_242 (LSTM)             (None, 21, 125)           63500     
+                                                                 
+ lstm_243 (LSTM)             (None, 21, 125)           125500    
+                                                                 
+ lstm_244 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_48 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_25""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_121 (LSTM)             (None, 28, 125)           63500     
+                                                                 
+ lstm_122 (LSTM)             (None, 28, 125)           125500    
+                                                                 
+ lstm_123 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_25 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_59""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_302 (LSTM)             (None, 35, 125)           63500     
+                                                                 
+ lstm_303 (LSTM)             (None, 35, 125)           125500    
+                                                                 
+ lstm_304 (LSTM)             (None, 125)               125500    
+                                                                 
+ dense_59 (Dense)            (None, 1)                 126       
+                                                                 
+=================================================================
+Total params: 314,626
+Trainable params: 314,626
+Non-trainable params: 0
+_________________________________________________________________
+Model: ""sequential_28""
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_143 (LSTM)             (None, 42, 50)            10400     
+                                                                 
+ lstm_144 (LSTM)             (None, 42, 50)            20200     
+                                                                 
+ lstm_145 (LSTM)             (None, 50)                20200     
+                                                                 
+ dense_28 (Dense)            (None, 1)                 51        
+                                                                 
+=================================================================
+Total params: 50,851
+Trainable params: 50,851
+Non-trainable params: 0
+_________________________________________________________________
+"
+tft,"{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.1, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.1, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.1, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.1, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.1, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.1, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 32, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.1, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.1, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdaccfb3c70>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdaccfb3730>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.9, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.9, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.9, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.9, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.9, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.9, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.9, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.9, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.9, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 32, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.9, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.9, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacea74970>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdacea74b50>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.4, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.4, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.4, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.4, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.4, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.4, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.4, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.4, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.4, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 32, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.4, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.4, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdad47e9970>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdacf60a520>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.2, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.2, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.2, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.2, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.2, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.2, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.2, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.2, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.2, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 8, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.2, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.2, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdacdff8850>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdacdff8c10>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.3, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.3, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.3, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.3, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.3, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.3, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.3, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.3, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.3, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 8, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.3, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.3, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdb941bdeb0>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdace37cd90>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}","{'prediction_length': 1, 'lead_time': 0, 'input_names': ['past_target', 'past_observed_values', 'past_feat_dynamic_real', 'past_feat_dynamic_cat', 'feat_dynamic_real', 'feat_dynamic_cat', 'feat_static_real', 'feat_static_cat'], 'prediction_net': TemporalFusionTransformerPredictionNetwork(
+  (target_proj): Dense(1 -> 32, linear)
+  (past_feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (past_feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_dynamic_proj): FeatureProjector(
+  
+  )
+  (feat_dynamic_embed): FeatureEmbedder(
+  
+  )
+  (feat_static_proj): FeatureProjector(
+  
+  )
+  (feat_static_embed): FeatureEmbedder(
+  
+  )
+  (static_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.5, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (ctx_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(160 -> 5, linear)
+      (mlp): HybridSequential(
+        (0): Dense(192 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.5, axes=())
+        (4): Dense(32 -> 10, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=5)
+    )
+  )
+  (tgt_selector): VariableSelectionNetwork(
+    (weight_network): GatedResidualNetwork(
+      (skip_proj): Dense(64 -> 2, linear)
+      (mlp): HybridSequential(
+        (0): Dense(96 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.5, axes=())
+        (4): Dense(32 -> 4, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=2)
+    )
+  )
+  (selection): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.5, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (enrichment): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.5, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_h): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.5, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (state_c): GatedResidualNetwork(
+    (mlp): HybridSequential(
+      (0): Dense(32 -> 32, linear)
+      (1): ELU(
+      
+      )
+      (2): Dense(32 -> 32, linear)
+      (3): Dropout(p = 0.5, axes=())
+      (4): Dense(32 -> 64, linear)
+      (5): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_encoder): TemporalFusionEncoder(
+    (encoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (decoder_lstm): HybridSequentialRNNCell(
+    (0): LSTMCell(32 -> 128)
+    )
+    (gate): HybridSequential(
+      (0): Dense(32 -> 64, linear)
+      (1): GatedLinearUnit(
+      
+      )
+    )
+    (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (temporal_decoder): TemporalFusionDecoder(
+    (enrich): GatedResidualNetwork(
+      (mlp): HybridSequential(
+        (0): Dense(64 -> 32, linear)
+        (1): ELU(
+        
+        )
+        (2): Dense(32 -> 32, linear)
+        (3): Dropout(p = 0.5, axes=())
+        (4): Dense(32 -> 64, linear)
+        (5): GatedLinearUnit(
+        
+        )
+      )
+      (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    )
+    (attention): SelfAttention(
+      (dropout): Dropout(p = 0.5, axes=())
+      (q_proj): Dense(32 -> 32, linear)
+      (k_proj): Dense(32 -> 32, linear)
+      (v_proj): Dense(32 -> 8, linear)
+      (out_proj): Dense(32 -> 32, linear)
+    )
+    (att_net): HybridSequential(
+      (0): Dropout(p = 0.5, axes=())
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (att_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+    (ff_net): HybridSequential(
+      (0): GatedResidualNetwork(
+        (mlp): HybridSequential(
+          (0): Dense(32 -> 32, linear)
+          (1): ELU(
+          
+          )
+          (2): Dense(32 -> 32, linear)
+          (3): Dropout(p = 0.5, axes=())
+          (4): Dense(32 -> 64, linear)
+          (5): GatedLinearUnit(
+          
+          )
+        )
+        (lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+      )
+      (1): Dense(32 -> 64, linear)
+      (2): GatedLinearUnit(
+      
+      )
+    )
+    (ff_lnorm): LayerNorm(eps=1e-05, axis=-1, center=True, scale=True, in_channels=32)
+  )
+  (output_proj): Dense(32 -> 3, linear)
+  (loss): QuantileLoss(batch_axis=0, w=None)
+), 'batch_size': 32, 'input_transform': <gluonts.transform._base.Chain object at 0x7fdaccba3760>, 'forecast_generator': <gluonts.model.forecast_generator.QuantileForecastGenerator object at 0x7fdaccba3fa0>, 'output_transform': None, 'ctx': cpu(0), 'dtype': <class 'numpy.float32'>}"
+mlp,"MLPRegressor(activation='logistic', hidden_layer_sizes=15, max_iter=1000)","MLPRegressor(activation='logistic', hidden_layer_sizes=20, max_iter=1000)","MLPRegressor(activation='logistic', hidden_layer_sizes=20, max_iter=1000)","MLPRegressor(activation='logistic', hidden_layer_sizes=15, max_iter=1000)","MLPRegressor(activation='logistic', hidden_layer_sizes=20, max_iter=1000)","MLPRegressor(activation='logistic', hidden_layer_sizes=20, max_iter=1000)"
+rf,"RandomForestRegressor(min_samples_leaf=5, min_samples_split=10,
+                      n_estimators=1000, n_jobs=-1)","RandomForestRegressor(min_samples_leaf=5, min_samples_split=10, n_jobs=-1)","RandomForestRegressor(min_samples_leaf=5, min_samples_split=10,
+                      n_estimators=1000, n_jobs=-1)","RandomForestRegressor(min_samples_leaf=5, n_estimators=1000, n_jobs=-1)","RandomForestRegressor(min_samples_leaf=5, min_samples_split=5, n_jobs=-1)","RandomForestRegressor(min_samples_leaf=5, min_samples_split=10, n_jobs=-1)"
+svr,"SVR(C=1, epsilon=0.001, gamma=1)","SVR(C=1, epsilon=0.0001, gamma=0.1)","SVR(C=1, epsilon=0.001, gamma=0.1)","SVR(C=10, epsilon=0.001, gamma=0.01)","SVR(C=10, epsilon=0.001, gamma=0.1)","SVR(C=10, epsilon=0.001, gamma=0.1)"
+xgboost,"{'n_estimators': 150, 'objective': 'reg:squarederror', 'max_depth': 3, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.8, 'sampling_method': None, 'colsample_bytree': 0.8, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.1, 'reg_lambda': 0.01, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdace962610>}","{'n_estimators': 100, 'objective': 'reg:squarederror', 'max_depth': 10, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.6, 'sampling_method': None, 'colsample_bytree': 0.8, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.1, 'reg_lambda': 0.01, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdacf5e06d0>}","{'n_estimators': 150, 'objective': 'reg:squarederror', 'max_depth': 10, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.6, 'sampling_method': None, 'colsample_bytree': 0.6, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.1, 'reg_lambda': 10, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdacdef7d30>}","{'n_estimators': 150, 'objective': 'reg:squarederror', 'max_depth': 10, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.6, 'sampling_method': None, 'colsample_bytree': 0.6, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.01, 'reg_lambda': 10, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdace962ac0>}","{'n_estimators': 200, 'objective': 'reg:squarederror', 'max_depth': 3, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.8, 'sampling_method': None, 'colsample_bytree': 0.6, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.1, 'reg_lambda': 0.01, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdacf5e0490>}","{'n_estimators': 200, 'objective': 'reg:squarederror', 'max_depth': 3, 'max_leaves': None, 'max_bin': None, 'grow_policy': None, 'learning_rate': 1, 'verbosity': None, 'booster': None, 'tree_method': None, 'gamma': 1, 'min_child_weight': None, 'max_delta_step': None, 'subsample': 0.8, 'sampling_method': None, 'colsample_bytree': 0.8, 'colsample_bylevel': None, 'colsample_bynode': None, 'reg_alpha': 0.1, 'reg_lambda': 0.01, 'scale_pos_weight': None, 'base_score': None, 'missing': nan, 'num_parallel_tree': None, 'random_state': None, 'n_jobs': None, 'monotone_constraints': None, 'interaction_constraints': None, 'importance_type': None, 'gpu_id': None, 'validate_parameters': None, 'predictor': None, 'enable_categorical': False, 'max_cat_to_onehot': None, 'eval_metric': None, 'early_stopping_rounds': None, 'callbacks': None, '_Booster': <xgboost.core.Booster object at 0x7fdacd825f40>}"
