@@ -286,7 +286,7 @@ class SVR:
         import random
 
         self.models = []
-        self.hyper_param = random.sample(self.hyper_param, 3)
+        self.hyper_param = random.sample(self.hyper_param, 30)
 
         for k, g, e, C in self.hyper_param:
             self.models.append(SVR(C=C, epsilon=e, kernel=k, gamma=g))

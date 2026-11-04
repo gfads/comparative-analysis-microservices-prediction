@@ -57,7 +57,7 @@ class EvaluateAccuracy:
         for model in self.models:
             result[model] = {}
             pckl = load_pickle(self.series + '/' + self.metric + '/' + self.training_level + '/' + model)
-            result[model]['costs'] = pckl['time_to_fit'] + pckl['time_to_predict']
+            result[model]['costs'] = (pckl['time_to_fit'] + pckl['time_to_predict']) / 30
 
         if not exists('results/' + pckl['folder']):
             makedirs('results/' + pckl['folder'])
